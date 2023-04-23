@@ -1,0 +1,80 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background: url(ocean.mp4) no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+.container {
+	max-width: 600px;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.85);
+	border: 2px solid #ddd;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+h2 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+label {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: rgba(70, 130, 180, 0.35);
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
+	background-color: rgba(70, 130, 180, 0.8);
+	outline: none;
+}
+
+.buttons {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+button {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	background-color: #007bff;
+	cursor: pointer;
+}
+
+button[type="reset"] {
+	background-color: #6c757d;
+}
+
+button[type="submit"] {
+	background-color: #28a745;
+}
